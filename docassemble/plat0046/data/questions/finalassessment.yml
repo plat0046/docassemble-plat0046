@@ -1,0 +1,22 @@
+---
+# This is the eligible endpoint.
+event: endpoint['eligible']
+question: Your form is completed!
+subquestion: |
+  ### Thank you for using SYC's Service Agreement Application
+
+  Attached below is a copy of your service agreement, completed with the information provided using this application.
+
+  If you are done, clicking **Exit** will take you to the SYC homepage. If you would like to create another service agreement, click **Make Another!**
+  
+attachment:
+  name: SYC Service Agreement
+  filename: SYCServiceAgreement
+  docx template file: LJLJ_serviceagreementtemplate_JINJA.docx
+  valid formats:
+    - pdf 
+buttons:
+  - Exit: exit
+    url: http://www.syc.net.au
+  - Make Another!: restart
+---
